@@ -5,3 +5,6 @@ firebase/
 backend/firebase.json
 backend/api/
 firebase.json
+frontend/.firebaserc
+backend/.firebaserc
+backend/db.sqlite3
