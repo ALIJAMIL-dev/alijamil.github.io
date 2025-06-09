@@ -1,0 +1,7 @@
+# Firebase key
+firebase_key.json
+backend/keys/
+firebase/
+backend/firebase.json
+backend/api/
+firebase.json
