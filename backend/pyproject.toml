@@ -1,0 +1,7 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "My website's backend"
+readme = "alijamil.github.io/README.md"
+requires-python = ">=3.13"
+dependencies = []
