@@ -1,25 +1,26 @@
-from flask import Blueprint, jsonify, request, current_app, send_from_directory
+from flask import Blueprint, jsonify, request
 
 api_bp = Blueprint("api", __name__)
 
-# GET API Example
-@api_bp.route("/hello", methods=["GET"])
-def hello():
-    # return HTML file for /hello
-    return send_from_directory(current_app.static_folder, "hello.html")
+# Health check endpoint
+@api_bp.route("/health", methods=["GET"])
+def health():
+    return jsonify({
+        "status": "healthy",
+        "message": "API is running successfully",
+        "version": "1.0.0"
+    }), 200
 
-# POST API Example
-@api_bp.route("/data", methods=["POST"])
-def get_data():
-    data = request.get_json()
-    return jsonify({"received": data})
-
-# Serve index.html at root
-@api_bp.route("/", methods=["GET"])
-def index():
-    return send_from_directory(current_app.static_folder, "index.html")
-
-# Example: /another route serving another.html
-@api_bp.route("/another", methods=["GET"])
-def another():
-    return send_from_directory(current_app.static_folder, "another.html")
+# General API info
+@api_bp.route("/info", methods=["GET"])
+def info():
+    return jsonify({
+        "name": "Ali JAMIL Portfolio API",
+        "version": "1.0.0",
+        "description": "Backend API for portfolio website with authentication and learning management",
+        "endpoints": {
+            "auth": "/api/auth",
+            "portfolio": "/api/portfolio", 
+            "learning": "/api/learning"
+        }
+    }), 200

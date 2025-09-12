@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "My website's backend"
 readme = "alijamil.github.io/README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "flask-jwt-extended>=4.5.0",
+    "bcrypt>=4.0.0",
+    "python-dotenv>=1.0.0"
+]
