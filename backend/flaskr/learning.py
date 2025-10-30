@@ -1,3 +1,72 @@
+from flask import Blueprint, jsonify, request, current_app
+from flask_jwt_extended import jwt_required, get_jwt_identity
+import os
+import json
+
+learning_bp = Blueprint('learning', __name__)
+
+DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
+os.makedirs(DATA_DIR, exist_ok=True)
+
+COURSES_FILE = os.path.join(DATA_DIR, 'courses.json')
+PROGRESS_FILE = os.path.join(DATA_DIR, 'progress.json')
+
+def load_json(path, default):
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return default
+
+def save_json(path, data):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+
+# Seed sample courses if not present
+if not os.path.exists(COURSES_FILE):
+    sample_courses = [
+        {"id": 1, "title": "Intro to Web", "description": "HTML, CSS, JS foundations", "lessons": 12},
+        {"id": 2, "title": "React Basics", "description": "Components, state, hooks", "lessons": 18},
+        {"id": 3, "title": "APIs with Flask", "description": "Build REST APIs with Flask", "lessons": 16}
+    ]
+    save_json(COURSES_FILE, sample_courses)
+
+@learning_bp.route('/courses', methods=['GET'])
+def list_courses():
+    courses = load_json(COURSES_FILE, [])
+    return jsonify({"courses": courses})
+
+@learning_bp.route('/courses/<int:course_id>', methods=['GET'])
+def get_course(course_id):
+    courses = load_json(COURSES_FILE, [])
+    for c in courses:
+        if c['id'] == course_id:
+            return jsonify(c)
+    return jsonify({"error": "Course not found"}), 404
+
+@learning_bp.route('/enroll', methods=['POST'])
+@jwt_required()
+def enroll():
+    username = get_jwt_identity()
+    data = request.get_json() or {}
+    course_id = data.get('course_id')
+    if not course_id:
+        return jsonify({"error": "course_id required"}), 400
+
+    progress = load_json(PROGRESS_FILE, {})
+    user_prog = progress.get(username, [])
+    if course_id in user_prog:
+        return jsonify({"message": "Already enrolled"}), 200
+    user_prog.append(course_id)
+    progress[username] = user_prog
+    save_json(PROGRESS_FILE, progress)
+    return jsonify({"message": "Enrolled", "course_id": course_id}), 201
+
+@learning_bp.route('/progress', methods=['GET'])
+@jwt_required()
+def get_progress():
+    username = get_jwt_identity()
+    progress = load_json(PROGRESS_FILE, {})
+    return jsonify({"username": username, "enrolled": progress.get(username, [])})
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 import json

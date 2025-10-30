@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTheme } from '../contexts/ThemeContext'
 import { useState } from 'react'
+import logo from '../assets/react.svg'
 
 const Navbar = () => {
     const { user, isAuthenticated, logout } = useAuth()
@@ -20,10 +21,10 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center space-x-3 group">
+                        <Link to="/" className="flex items-center space-x-3 group">
                         <div className="relative">
                             <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-orange-500 rounded-xl flex items-center justify-center group-hover:scale-105 transition-all duration-300 group-hover:rotate-2">
-                                <img src="/logo.svg" alt="Ali JAMIL Logo" className="w-6 h-6" />
+                                <img src={logo} alt="Ali JAMIL Logo" className="w-6 h-6" />
                             </div>
                             <div className="absolute inset-0 bg-emerald-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110"></div>
                         </div>

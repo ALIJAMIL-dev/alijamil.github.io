@@ -17,6 +17,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --edu-bg: #f7f9fb;
+  --edu-foreground: #0f172a;
+  --edu-primary: #16a34a; /* green */
+  --edu-accent: #f59e0b; /* amber */
+  --edu-card: #ffffff;
+  --edu-muted: #6b7280;
+}
+
+/* Education-style hero */
+.edu-hero {
+  background: linear-gradient(135deg,var(--edu-primary) 0%, rgba(22,163,74,0.85) 60%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.course-card {
+  background: var(--edu-card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.06);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+.course-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--edu-primary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.edu-cta {
+  background: linear-gradient(90deg,var(--edu-primary), var(--edu-accent));
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,14 +77,31 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+/* small utility classes for non-tailwind fallback */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+  padding: 1rem;
 }
 
 button {
