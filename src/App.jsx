@@ -2,6 +2,7 @@ import './App.css'
 import LinkedInIcon from './assets/LinkedIn'
 import GitHubIcon from './assets/GitHub'
 import icons from './assets/icons'
+import myprofileimage from './assets/myprofileimage.jpg';
 
 function App() {
   const skills = [
@@ -37,7 +38,7 @@ function App() {
       <header className="hero">
         <div className="hero-left">
           <a href='https://github.com/ALIJAMIL-dev' target='_blank' rel='noopener noreferrer' aria-label='Profile'>
-            <img src='/myprofileimage.jpg' alt='ALI JAMIL profile' />
+            <img src={myprofileimage} alt='ALI JAMIL profile' />
           </a>
           <div className='social-links'>
             <a className='social-link linkedin' href='https://www.linkedin.com/in/ali-jamil-dev/' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn'>
