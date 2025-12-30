@@ -2,7 +2,7 @@ import './App.css'
 import LinkedInIcon from './assets/LinkedIn'
 import GitHubIcon from './assets/GitHub'
 import icons from './assets/icons'
-import myprofileimage from './assets/myprofileimage.jpg';
+import myprofileimage from '../myprofileimage.jpg';
 
 function App() {
   const skills = [
