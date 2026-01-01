@@ -1,0 +1,157 @@
+.home-page{ 
+    .text-zone { 
+        position: absolute; 
+        left: 10%; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        width: 40%; 
+        max-height: 90%; 
+    }
+    h1{
+        color: #fff; 
+        font-size: 53px; 
+        margin: 0; 
+        font-family: "Coolvetica"; 
+        font-weight: 400; 
+        cursor: pointer;
+        line-height: 1;
+
+        /* tighten inline elements and line spacing */
+        span { display: inline-block; vertical-align: middle; }
+        br { display: block; margin: 6px 0; line-height: 0; }
+        .job-title { display: block; font-size: 44px; margin-top: 6px; font-weight: 700; }
+
+        &::before { 
+            color: #ffd700; 
+            font-size: 18px; 
+            position: absolute; 
+            margin-top: -40px; 
+            left: 15px; 
+            opacity: 0.6; 
+        }
+
+        &::after { 
+            color: #ffd700; 
+            font-size: 18px; 
+            position: absolute; 
+            margin-top: 18px; 
+            left: 20px; 
+            animation: fadeIn 1s 1.7s backwards; 
+            opacity: 0.6; 
+        }
+        img { 
+            width: 86px; 
+            margin-left: 0; /* remove extra space so A and 'li' are one word */
+            margin-right: 4px; 
+            opacity: 0; 
+            height: auto; 
+            display: inline-block;
+            vertical-align: middle; /* center with surrounding text */
+            transform: translateY(6%); /* fine-tune vertical position */
+            animation: rotateIn 1s linear both; 
+            animation-delay: 1.4s; 
+        }
+
+        /* name as text - remove spacing to make 'Ali' one word */
+        .name-letters {
+            display: inline-flex;
+            align-items: center;
+            vertical-align: middle;
+            font-size: inherit; /* match the heading font size */
+            line-height: 1; /* tight vertical rhythm */
+            transform: translateY(0); /* align baseline */
+            margin-left: 8px; /* small gap between "I'm" and "Ali" */
+            margin-right: 4px;
+        }
+
+        .name-letters .text-animate {
+            min-width: 0 !important;
+            margin-left: -1px; /* tighter kerning but no overlap */
+            display: inline-block;
+            font-size: inherit;
+            line-height: 1;
+        }
+    }
+
+    h2 { 
+        color: #ade8f4; 
+        margin-top: 20px; 
+        font-weight: 500; 
+        font-size: 11px; 
+        font-family: sans-serif; 
+        letter-spacing: 3px; 
+        animation: fadeIn 1s 1.8s backwards; 
+    }
+
+    .flat-button { 
+        color: #ffd700; 
+        font-size: 15px; 
+        font-weight: 800;
+        letter-spacing: 4px;
+        text-decoration: none;
+        padding: 10px 18px; 
+        border: 2px solid #ffd700; 
+        margin-top: 25px; 
+        float: left; 
+        animation: fadeIn 1s 1.8s backwards; 
+        white-space: nowrap; 
+
+        &:hover { 
+            background: #ffd700; 
+            color: #333;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .home-page{
+        .logo-container {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    
+    .home-page{
+        h1{
+            font-size: 40px; 
+            justify-content: center;
+        }
+        .text-zone{
+            position: initial;
+            width: 100%; 
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .logo-container {
+            position: relative; 
+            width: 250px;
+            height: auto; 
+            top: 50px; 
+            right: 0; 
+            box-sizing: border-box; 
+            margin: auto; 
+            left: 0; 
+
+            svg{
+                position: absolute; 
+                top: auto; 
+                right: auto; 
+                bottom: auto; 
+                left: 0;
+                margin: auto;
+            }
+        }
+
+        .flat-button{
+            float: none;
+            display: block;
+            width: 125px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Ultimate Python",
+    "description": "My Python repo for learning and teaching Python and its frameworks/libraries like NumPy, PyTorch, etc.",
+    "link": "https://github.com/ALIJAMIL-dev/Python"
+  },
+  {
+    "title": "alijamil.github.io",
+    "description": "This website's repo for deploying it and the source code.",
+    "link": "https://github.com/ALIJAMIL-dev/alijamil.github.io"
+  }
+]

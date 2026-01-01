@@ -1,64 +1,73 @@
-# ALI JAMIL — Software Engineer
+# ALI JAMIL's Coding Portfolio
 
-Professional portfolio and project showcase for ALI JAMIL.
+Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://alijamil-portfolio.vercel.app/)
 
----
+<img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/ALIJAMIL-dev/alijamil.github.io/assets/86483911/3158d670-8cea-428a-8308-32c6b50f4de0">
 
-## About ✅
-I'm an AI Engineer / Software Developer specializing in back-end systems and Python. I build reproducible ML pipelines (PyTorch, NumPy, pandas), web backends (Django, Flask), and responsive frontends (React + Vite). I enjoy sharing knowledge, learning daily, and producing clean, maintainable software.
 
-## Features ✨
-- Hero section with headline, summary, and social links (LinkedIn, GitHub)
-- Skill badges with icons
-- Project showcase with links to repositories
-- Responsive design and fast build with Vite
 
-## Projects 🔧
-- **Python Tooling & ML Suite** — Comprehensive collection of Python projects and examples for intermediate → advanced users (NumPy, pandas, PyTorch, Django, Flask). Includes training scripts, notebooks, and reproducible examples.
-  - Repo: https://github.com/ALIJAMIL-dev/Python
 
-- **Personal Website (This Site)** — Portfolio site built with React + Vite to present projects, skills, and contact information. Optimized for fast builds and simple deployment.
-  - Repo: https://github.com/ALIJAMIL-dev/alijamil.github.io
+## Table of Contents
 
-## Tech stack 🧰
-- Frontend: React, Vite, CSS
-- Backends / Tools: Python, PyTorch, Django, Flask
-- Data: NumPy, pandas
+- [ALI JAMIL's Coding Portfolio](#ali-jamils-coding-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-## Local development ▶️
-Requirements: Node.js (14+), npm/yarn
+## Introduction
 
-Install and run locally:
+This portfolio is a personalized space for me to highlight my expertise, share my projects, and provide information about my coding journey. The application offers an interactive and user-friendly experience for visitors to explore my work and get in touch with me.
 
-```bash
-npm install
-npm run dev
-# build
-npm run build
-# preview production build
-npm run preview
-```
+## Features
 
-## Deployment 🚀
-- Deploy to GitHub Pages, Netlify, or Vercel. For GitHub Pages, build (`npm run build`) and push the `dist`/`build` output to the `gh-pages` branch (or use a CI/CD deployment step).
+- **Responsive Design:** The portfolio is designed to be accessible and visually appealing across various devices and screen sizes.
 
-## Contributing 🤝
-Issues and PRs welcome. Please add clear descriptions and tests/examples where applicable.
+- **Project Showcase:** I can display my coding projects with detailed information, including technologies used, project descriptions, and live demo links.
+
+- **Skills Section:** A dedicated section to showcase my skills and proficiency in different programming languages, frameworks, and tools.
+
+- **Contact Form:** An interactive contact form allowing visitors to reach out to me directly.
+
+## Installation
+
+To run this portfolio locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/ALIJAMIL-dev/alijamil.github.io.git`
+
+2. Navigate to the project directory: `cd alijamil.github.io`
+
+3. Install dependencies: `npm install`
+
+4. Start the development server: `npm start`
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000)
+
+## Technologies Used
+
+- ReactJs: A JavaScript library for building user interfaces.
+- Sass: A CSS preprocessor that enhances the styling capabilities of the application.
+
+## Project Structure
+
+The project structure follows a standard React application layout. Key directories include:
+
+- `src/components`: Contains React components used to build different sections of the portfolio.
+- `src/styles`: Sass files for styling the application.
+- `public`: Static assets and the `index.html` file.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
-MIT — change in the `LICENSE` file if you prefer another license.
 
-## Contact
-- GitHub: https://github.com/ALIJAMIL-dev
-- LinkedIn: update your `LinkedIn` URL in the header if needed
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-If you want, I can:
-- Add README badges (build, license)
-- Auto-generate project screenshots and embed them in the project cards
-- Add a `CONTRIBUTING.md` template or a `LICENSE` file
-
-Tell me which of those you'd like next and I'll add them.
-
-
+Thank you for checking out my Coding Portfolio! If you have any questions or feedback, feel free to reach out.
