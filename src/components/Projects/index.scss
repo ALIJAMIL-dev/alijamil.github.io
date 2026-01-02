@@ -4,12 +4,12 @@
 
     h1 {
       font-size: 48px;
-      color: #ffd700;
+      color: #ff6b6b;
       margin: 0 0 12px 0;
     }
 
     p {
-      color: #e6f7ff;
+      color: #ffcccc;
       font-size: 16px;
       max-width: 760px;
     }
@@ -25,7 +25,7 @@
 
   .project-card {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 107, 107, 0.08);
     padding: 18px;
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -33,12 +33,12 @@
 
     h3 {
       margin: 0 0 8px 0;
-      color: #ffd700;
+      color: #ff6b6b;
       font-size: 20px;
     }
 
     p {
-      color: #cfeff7;
+      color: #ffb3b3;
       font-size: 14px;
       margin: 0 0 12px 0;
     }
@@ -46,7 +46,7 @@
     .project-link {
       display: inline-block;
       color: #001f2f;
-      background: #ffd700;
+      background: #ff6b6b;
       padding: 8px 12px;
       border-radius: 6px;
       text-decoration: none;

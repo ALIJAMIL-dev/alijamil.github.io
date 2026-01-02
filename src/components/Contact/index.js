@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import socials from '../../data/socials.json'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,6 +21,8 @@ const Contact = () => {
           clearTimeout(timerId);
         };
       }, []);
+
+      const linkedinUrl = socials.socials.find((s) => s.name === 'linkedin')?.url;
 
       const sendEmail = (e) => {
         e.preventDefault() 
@@ -59,9 +62,11 @@ const Contact = () => {
                                     <br/>I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
                                     <br/>
                                     <br/>
-                                    <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/ali-jamil-dev/">
-                                        <FontAwesomeIcon icon={faLinkedin}  class = "icon" color = "#4d4d4e" />
-                                    </a>
+                                    {linkedinUrl && (
+                                        <a target="_blank" rel="noreferrer" href={linkedinUrl}>
+                                            <FontAwesomeIcon icon={faLinkedin} className="icon" color="#4d4d4e" />
+                                        </a>
+                                    )}
                                     <a target = "_blank" rel = "noreferrer" href = "mailto:AliJamil@gmail.com">
                                         <FontAwesomeIcon icon={faEnvelope} class = "icon" color = "#4d4d4e" />
                                     </a>

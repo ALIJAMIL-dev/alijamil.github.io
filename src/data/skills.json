@@ -1,28 +1,22 @@
 {
   "languages": [
-    { "name": "Java", "progress": 100, "className": "java-progress", "years": 4 },
-    { "name": "Python", "progress": 75, "className": "python-progress", "years": 3 },
-    { "name": "HTML/CSS/JS", "progress": 75, "className": "web-progress", "years": 3 },
+    { "name": "Python", "progress": 100, "className": "python-progress", "years": 4 },
+    { "name": "Java", "progress": 25, "className": "java-progress", "years": 1 },
+    { "name": "HTML/CSS/JS", "progress": 50, "className": "web-progress", "years": 3 },
     { "name": "SQL", "progress": 37.5, "className": "sql-progress", "years": 1.5 },
-    { "name": "C", "progress": 25, "className": "c-progress", "years": 1 },
-    { "name": "GoLang", "progress": 25, "className": "golang-progress", "years": 1 },
-    { "name": "VHDL", "progress": 25, "className": "vhdl-progress", "years": 1 }
+    { "name": "C#", "progress": 50, "className": "csharp-progress", "years": 2 }
   ],
   "techs": [
-    { "name": "ReactJS", "progress": 100, "className": "react-progress", "years": 3 },
-    { "name": "PostgreSQL", "progress": 100, "className": "postgre-progress", "years": 2 },
-    { "name": "Spring Boot", "progress": 100, "className": "springboot-progress", "years": 2 },
-    { "name": "Natural Language Processing", "progress": 50, "className": "nlp-progress", "years": 1 },
-    { "name": "Large Language Models", "progress": 50, "className": "llm-progress", "years": 1 },
-    { "name": "NodeJS", "progress": 50, "className": "node-progress", "years": 1 },
-    { "name": "VueJS", "progress": 50, "className": "vue-progress", "years": 1 }
+    { "name": "ReactJS", "progress": 50, "className": "react-progress", "years": 3 },
+    { "name": "PostgreSQL", "progress": 37.5, "className": "postgre-progress", "years": 2 },
+    { "name": "Django", "progress": 37.5, "className": "django-progress", "years": 1 },
+    { "name": "Flask", "progress": 100, "className": "flask-progress", "years": 2 },
+    { "name": "NodeJS", "progress": 50, "className": "node-progress", "years": 1 }
   ],
   "devtools": [
-    { "name": "Amazon Web Services (AWS)", "progress": 100, "className": "aws-progress", "years": 2 },
-    { "name": "Postman", "progress": 100, "className": "postman-progress", "years": 2 },
     { "name": "Git", "progress": 100, "className": "github-progress", "years": 2 },
-    { "name": "Microsoft Azure DevOps", "progress": 50, "className": "azure-progress", "years": 1 },
-    { "name": "Docker", "progress": 50, "className": "docker-progress", "years": 1 },
-    { "name": "Power BI", "progress": 100, "className": "pbi-progress", "years": 1 }
+    { "name": "VS Code", "progress": 100, "className": "vscode-progress", "years": 3 },
+    { "name": "Jupyter", "progress": 100, "className": "jupyter-progress", "years": 3 },
+    { "name": "Docker", "progress": 50, "className": "docker-progress", "years": 1 }
   ]
 }

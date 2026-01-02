@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "to-ico": "^1.1.5"
   }
 }
