@@ -1,0 +1,155 @@
+{
+  "programming": [
+    {
+      "name": "Python",
+      "iconName": "faPython",
+      "color": "#3776ab",
+      "type": "brand"
+    },
+    {
+      "name": "PyTorch",
+      "iconName": "faBrain",
+      "color": "#ee4c2c",
+      "type": "solid"
+    },
+    {
+      "name": "TensorFlow",
+      "iconName": "faBrain",
+      "color": "#ff6f00",
+      "type": "solid"
+    },
+    {
+      "name": "OpenCV",
+      "iconName": "faEye",
+      "color": "#5c3ee8",
+      "type": "solid"
+    },
+    {
+      "name": "Java",
+      "iconName": "faJava",
+      "color": "#ed8b00",
+      "type": "brand"
+    },
+    {
+      "name": "HTML/CSS",
+      "iconName": "faHtml5",
+      "color": "#e34c26",
+      "type": "brand"
+    },
+    {
+      "name": "JS/TS",
+      "iconName": "faJs",
+      "color": "#f7df1e",
+      "type": "brand"
+    },
+    {
+      "name": "React",
+      "iconName": "faReact",
+      "color": "#61dafb",
+      "type": "brand"
+    },
+    {
+      "name": "Node.js",
+      "iconName": "faNode",
+      "color": "#339933",
+      "type": "brand"
+    },
+    {
+      "name": "Git",
+      "iconName": "faGitAlt",
+      "color": "#f05032",
+      "type": "brand"
+    }
+  ],
+  "creative": [
+    {
+      "name": "Premiere Pro",
+      "iconName": "faVideo",
+      "color": "#ea77ff",
+      "type": "solid"
+    },
+    {
+      "name": "Photoshop",
+      "iconName": "faImage",
+      "color": "#31a8ff",
+      "type": "solid"
+    },
+    {
+      "name": "DaVinci Resolve",
+      "iconName": "faVideo",
+      "color": "#ff6b35",
+      "type": "solid"
+    },
+    {
+      "name": "Adobe",
+      "iconName": "faPalette",
+      "color": "#ff0000",
+      "type": "solid"
+    },
+    {
+      "name": "Blender",
+      "iconName": "faCube",
+      "color": "#f5792a",
+      "type": "solid"
+    }
+  ],
+  "Tools": [
+    {
+      "name": "VS Code",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    },
+    {
+      "name": "Jupyter",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    },
+    {
+      "name": "Docker",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    },
+    {
+      "name": "Git",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    },
+    {
+      "name": "GitHub",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    },
+    {
+      "name": "GitLab",
+      "iconName": "faCode",
+      "color": "#007acc",
+      "type": "solid"
+    }
+  ],
+  "Gaming": [
+    {
+      "name": "CS 1.6",
+      "iconName": "faGamepad",
+      "color": "#000000",
+      "type": "solid"
+    },
+    {
+      "name": "CS GO",
+      "iconName": "faGamepad",
+      "color": "#000000",
+      "type": "solid"
+    },
+    {
+      "name": "CS 2",
+      "iconName": "faGamepad",
+      "color": "#000000",
+      "type": "solid"
+    }
+  ]
+}
+

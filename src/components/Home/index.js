@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Logo from './Logo';
+import SkillsCards from './SkillsCards';
 import siteData from '../../data/site.json';
 
 const Home = () => {
@@ -34,6 +35,7 @@ const Home = () => {
                 <Link to="/contact" className="flat-button">{siteData.contactButton}</Link>
             </div>
             <Logo className="Home"/>
+            <SkillsCards />
         </div>
         <Loader type="pacman" />
       </>
