@@ -9,13 +9,20 @@ import socials from '../../data/socials.json'
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false)
+    
+    const handleBackdropClick = () => {
+        setShowNav(false);
+    };
+    
     return(
-        <div className = 'nav-bar'> 
-            <Link className = "logo" to="/"> 
-                <img src = {LogoA} alt="logo" />
-                <span className="author-name">Ali J.</span>
-            </Link>
-            <nav className={showNav ? 'mobile-show' : ""}>
+        <>
+            {showNav && <div className="mobile-backdrop" onClick={handleBackdropClick}></div>}
+            <div className = 'nav-bar'> 
+                <Link className = "logo" to="/"> 
+                    <img src = {LogoA} alt="logo" />
+                    <span className="author-name">Ali J.</span>
+                </Link>
+                <nav className={showNav ? 'mobile-show' : ""}>
                 <NavLink exact="true" activeclassname = "active" to="/">
                     <FontAwesomeIcon icon = {faHome} color = "#4d4d4e" onClick={() => setShowNav(false)} />
                 </NavLink>
@@ -52,6 +59,7 @@ const Sidebar = () => {
             </ul>
             <FontAwesomeIcon onClick={() => setShowNav(true)} icon={faBars} color="#ff6b6b" size="3x" className="hamburger-icon" />
         </div>
+        </>
     )
 }
 
