@@ -1,4 +1,4 @@
-import ProfileImage from '../../../assets/images/myprofileimage.jpg';
+import ProfileImage from '../../../assets/images/A.svg';
 import './index.scss';
 
 const Logo = () => {

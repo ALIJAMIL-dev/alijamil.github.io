@@ -2,7 +2,7 @@ import './index.scss'
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faFolderOpen, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
-import LogoA from '../../assets/images/myprofileimage.jpg'
+import LogoA from '../../assets/images/A.svg'
 import { faGithub, faLinkedin, faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 import socials from '../../data/socials.json'
